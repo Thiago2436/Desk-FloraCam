@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title>Medidor de Altura</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Medidor de altura</title>
+	<style>
+		#video, #canvas {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
 </head>
 <body>
-	<h1>Medidor de Altura</h1>
-	<video id="video"></video>
-	<canvas id="canvas"></canvas>
-	<div id="height-container">
-		<label>Altura do objeto:</label>
-		<span id="height"></span>
-		<span>cm</span>
+	<h1>Medidor de altura</h1>
+	<div>
+		<video id="video"></video>
+		<canvas id="canvas"></canvas>
 	</div>
-	<script src="script.js"></script>
+	<button id="calibrate">Calibrar objeto de referência</button>
+	<button id="measure">Medir altura</button>
+	<script src="medidorAltura.js"></script>
 </body>
 </html>
